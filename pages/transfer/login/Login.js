@@ -1,4 +1,4 @@
-// pages/functions/demos/selectImage/index.js
+// pages/transfer/login/Login.js
 Page({
 
   /**

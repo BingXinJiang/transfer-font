@@ -1,0 +1,26 @@
+<!--pages/transfer/Transfer.wxml-->
+<view class='container'>
+  <view class='phone'>
+    <text class='phone text'>手机号:</text>
+    <input class='phone input' 
+      placeholder='请输入手机号'></input>
+  </view>
+  <view class='auth_code'>
+    <text class='auth_code text'>验证码:</text>
+    <input class='auth_code input' placeholder='请输入验证码'></input>
+    <button class='auth_code button' 
+      size='mini'
+      disabled='{{!canGetAuthData}}'
+      bindtap='getAuthData'>
+      {{getAuthData}}
+    </button>
+  </view>
+  <view class='register'>
+    <button class='register button' 
+      size='mini' 
+      bindtap='register'
+      type='primary'>
+      注册
+    </button>
+  </view>
+</view>

@@ -1,13 +1,42 @@
 {
   "pages": [
-    "pages/functions/demos/selectImage/index",
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/transfer/Transfer",
+    "pages/transfer/loveTransfer/LoveTransfer",
+    "pages/transfer/transfer/Transfer",
+    "pages/transfer/loveLine/LoveLine",
+    "pages/transfer/mine/Mine",
+    "pages/transfer/login/Login"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/transfer/loveTransfer/LoveTransfer",
+        "iconPath": "pages/transfer/image/tab/love_transfer_l.png",
+        "selectedIconPath": "pages/transfer/image/tab/love_transfer_h.png",
+        "text": "爱传递"
+      },
+      {
+        "pagePath": "pages/transfer/loveLine/LoveLine",
+        "iconPath": "pages/transfer/image/tab/love_line_l.png",
+        "selectedIconPath": "pages/transfer/image/tab/love_line_h.png",
+        "text": "LoveLine"
+      },
+      {
+        "pagePath": "pages/transfer/mine/Mine",
+        "iconPath": "pages/transfer/image/tab/mine_l.png",
+        "selectedIconPath": "pages/transfer/image/tab/mine_h.png",
+        "text": "我的"
+      }
+    ]
   }
 }
