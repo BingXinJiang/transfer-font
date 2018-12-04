@@ -1,0 +1,7 @@
+<!--pages/transfer/common/createTransfer/CreateTransfer.wxml-->
+<view class='container'>
+  <view class='create' bindtap='createTransfer'>
+    <text class='create text'>创建</text>
+  </view>
+  <slot></slot>
+</view>

@@ -5,13 +5,11 @@ Page({
    * 页面的初始数据
    */
   data: {
-    name:'王嘉尔'
+    
   },
 
   changeName: function (e) {
-    this.setData({
-      name: 'MINA'
-    })
+    
   },
 
   /**

@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "create-transfer": "../common/createTransfer/create-transfer"
+  }
+}

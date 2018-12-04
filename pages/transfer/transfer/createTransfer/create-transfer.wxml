@@ -1,0 +1,4 @@
+<!--pages/transfer/transfer/create-transfer/create-transfer.wxml-->
+<view class='container'>
+  <text>创建Transfer页面！</text>
+</view>
