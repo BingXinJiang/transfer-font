@@ -1,2 +1,32 @@
 <!--pages/transfer/login/Login.wxml-->
-<text>pages/transfer/login/Login.wxml</text>
+<view class='container'>
+  <form bindsubmit="register">
+    <view class='field nickname'>
+    <text class='nickname text'>昵称:</text>
+    <input class='nickname input' 
+      name='nickname'
+      placeholder='请输入昵称'></input>
+    </view>
+    <view class='field password'>
+      <text class='text'>密码:</text>
+      <input class='input' 
+        name='password'
+        password='true'
+        placeholder='请输入密码'></input>
+    </view>
+    <view class='field email'>
+      <text class='text'>邮箱:</text>
+      <input class='input' 
+        name='email'
+        placeholder='请输入邮箱'></input>
+    </view>
+    <view class='register'>
+      <button class='button' 
+        size='mini' 
+        form-type="submit"
+        type='primary'>
+        注册
+      </button>
+    </view>
+  </form>
+</view>

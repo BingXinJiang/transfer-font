@@ -7,60 +7,22 @@ Page({
   data: {
 
   },
-
   /**
-   * 生命周期函数--监听页面加载
+   * 注册
    */
-  onLoad: function (options) {
+  register: function(e) {
+    let app = getApp();
+    let userInfo = e.detail.value;
+    let AV = app.AV;
+    let user = new AV.User();
+    user.setUsername(userInfo.nickname);
+    user.setPassword(userInfo.password);
+    user.setEmail(userInfo.email);
 
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+    user.signUp().then(function (loginedUser) {
+      // 注册成功，跳转到商品 list 页面
+    }, (function (error) {
+      alert(JSON.stringify(error));
+    }));
   }
 })

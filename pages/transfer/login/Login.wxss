@@ -1,1 +1,35 @@
 /* pages/transfer/login/Login.wxss */
+.container {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx;
+  margin-top: 150rpx;
+  align-items: center;
+}
+
+.input {
+  border-style: solid;
+  border-width: 1px;
+  border-color: gainsboro;
+  border-radius: 5rpx;
+  padding-left: 15rpx;
+  padding-top: 5rpx;
+  padding-bottom: 5rpx;
+  margin-left: 20rpx;
+}
+
+.field {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+}
+
+.register {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 100rpx;
+}
