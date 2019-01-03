@@ -1,12 +1,12 @@
 {
   "pages": [
     "pages/transfer/login/login",
-    "pages/transfer/transfer",
+		"pages/transfer/transfer/createTransfer/create-transfer",    
     "pages/transfer/loveTransfer/love-transfer",
+    "pages/transfer/transfer",
     "pages/transfer/transfer/transfer",
     "pages/transfer/loveLine/love-line",
-    "pages/transfer/mine/mine",
-    "pages/transfer/transfer/createTransfer/create-transfer"
+    "pages/transfer/mine/mine"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,1 +1,73 @@
-/* pages/transfer/transfer/create-transfer/create-transfer.wxss */
+
+/* 左右边距统一为 30rpx */
+.container {
+	margin-left: 30rpx;
+	margin-right: 30rpx;
+	margin-top: 40rpx;
+}
+
+.header {
+	position: fixed;
+	width: 690rpx;
+	height: 90rpx;
+	background: white;
+	top: 40rpx;
+	left: 30rpx;
+}
+.header-back {
+	position: absolute;
+	width: 150rpx;
+	height: 90rpx;
+	line-height: 90rpx;
+	top: 0rpx;
+	left: 0rpx;
+	color: #333333;
+}
+.header-title {
+	position: relative;
+	width: 690rpx;
+	height: 90rpx;
+	text-align: center;
+	line-height: 90rpx;
+	color: #333333;
+}
+
+.wrap {
+	position: relative;
+	background: #EFEFEF;
+  top: 130rpx;
+}
+
+.textarea-placeholder {
+	font-size: 26rpx;
+	color: #999999;
+}
+.textarea-content {
+	width: 630rpx;
+	font-size: 32rpx;
+	margin-left: 30rpx;
+	margin-top: 30rpx;
+	margin-right: 30rpx;
+}
+
+.media-func {
+	width: 240rpx;
+	height: 240rpx;
+	background-color: #EFEFEF;
+	border-radius: 10rpx;
+}
+.label-text-media {
+	margin-top: 30rpx;
+	font-size: 26rpx;
+	color: #666666;
+}
+.image-func-media {
+	width: 80rpx;
+	height: 80rpx;
+}
+.container-media {
+	border-bottom-style: solid;
+	border-bottom-width: 1rpx;
+	border-bottom-color: #ECECEC;
+	padding-bottom: 30rpx;
+}

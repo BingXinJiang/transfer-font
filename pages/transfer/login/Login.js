@@ -20,9 +20,29 @@ Page({
     user.setEmail(userInfo.email);
 
     user.signUp().then(function (loginedUser) {
-      // 注册成功，跳转到商品 list 页面
+      wx.switchTab({
+        url: '/pages/transfer/loveTransfer/love-transfer',
+      })
     }, (function (error) {
-      alert(JSON.stringify(error));
+      console.log('error: ', error);
     }));
+  },
+  /**
+   * 登录
+   */
+  login: function(e) {
+    let app = getApp();
+    let userInfo = e.detail.value;
+    let AV = app.AV;
+
+    AV.User.logIn(userInfo.email, userInfo.password).then((loginedUser) => {
+      console.log('loginedUser: ', loginedUser);
+      wx.redirectTo({
+        url: '/pages/transfer/transfer/createTransfer/create-transfer',
+      })
+    }, (error) => {
+      console.log('error: ', error);
+    });
+
   }
 })

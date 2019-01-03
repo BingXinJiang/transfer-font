@@ -1,6 +1,6 @@
 <!--pages/transfer/login/Login.wxml-->
 <view class='container'>
-  <form bindsubmit="register">
+  <form bindsubmit="register" class='form-register'>
     <view class='field nickname'>
     <text class='nickname text'>昵称:</text>
     <input class='nickname input' 
@@ -26,6 +26,29 @@
         form-type="submit"
         type='primary'>
         注册
+      </button>
+    </view>
+  </form>
+  <form bindsubmit="login" class='form-login'>
+    <view class='field email'>
+      <text class='text'>邮箱:</text>
+      <input class='input' 
+        name='email'
+        placeholder='请输入邮箱'></input>
+    </view>
+    <view class='field password'>
+      <text class='text'>密码:</text>
+      <input class='input' 
+        name='password'
+        password='true'
+        placeholder='请输入密码'></input>
+    </view>
+    <view class='register'>
+      <button class='button' 
+        size='mini' 
+        form-type="submit"
+        type='primary'>
+        登录
       </button>
     </view>
   </form>

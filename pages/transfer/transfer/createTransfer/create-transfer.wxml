@@ -1,4 +1,31 @@
 <!--pages/transfer/transfer/create-transfer/create-transfer.wxml-->
 <view class='container'>
-  <text>创建Transfer页面！</text>
+
+		<view class='header'>
+			<view class='header-back'>取消</view>
+			<view class='header-title'>创建任务</view>
+		</view>
+
+		<wxc-flex class='wrap' dir='top'>
+			<view class='wrap-content'>
+				<wxc-input type="text" placeholder="请输入任务名称" bind:input="createTitle"></wxc-input>
+			</view>
+			<view class='wrap-content'>
+				<textarea class='textarea-content' bindinput="createContent" placeholder='请输入任务描述'  placeholder-class='textarea-placeholder' maxlength='-1'></textarea>
+			</view>
+
+			<wxc-flex class='container-media' dir='left'>
+				<wxc-flex class='media-func' dir='top' main='center' cross='center' bind:click='loadMedia'>
+					<image class='image-func-media' src='../../image/transfer/createTransfer/camera.png'></image>
+					<wxc-flex main='center'>
+						<label class='label-text-media'>照片/视频/语音</label>
+					</wxc-flex>
+				</wxc-flex>
+			</wxc-flex>
+		</wxc-flex>
+
+		<wxc-cc class='transfer-func'>
+			<wxc-button size='normal' type='selection'>传递</wxc-button>
+		</wxc-cc>
+
 </view>
