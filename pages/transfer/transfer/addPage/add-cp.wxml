@@ -1,0 +1,26 @@
+<!--pages/transfer/transfer/addPage/add-cp.wxml-->
+<view class='container'>
+
+
+	<view>
+		<van-checkbox-group value="{{ selectedCps }}" bind:change="onChange">
+			<van-cell-group >
+				<van-cell
+					wx:for="{{ cps }}"
+					wx:key="{{ item.id }}"
+					title="{{ item.name }}"
+					clickable
+					data-name="{{ item.id }}"
+					bind:click="toggle"
+				>
+					<van-checkbox catch:tap="noop" class="checkboxes-{{ item.id }}" name="{{ item.id }}" />
+				</van-cell>
+			</van-cell-group>
+		</van-checkbox-group>
+	</view>
+
+
+	<!-- <view>
+		<wxc-select items="{{cps}}" color="#28a745" bind:change="chooseCps"></wxc-select>
+	</view> -->
+</view>

@@ -1,0 +1,9 @@
+/* pages/transfer/transfer/createTodo/create-todo.wxss */
+.container {
+	margin: 30rpx;
+}
+
+.description {
+	text-align: start;
+	line-height: 55rpx;
+}

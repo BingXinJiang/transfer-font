@@ -1,6 +1,10 @@
 <!--pages/transfer/loveTransfer/LoveTransfer.wxml-->
 <view class='container'>
-  <text>哈哈哈</text>
+  
+	<view>
+		<button size='mini' type='primary' bindtap='groupCP'>组合</button>
+	</view>
+
   <create-transfer>
   </create-transfer>
 </view>

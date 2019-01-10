@@ -8,9 +8,14 @@ Page({
     
   },
 
-  changeName: function (e) {
-    
-  },
+	/**
+	 * 创建组合入口
+	 */
+	groupCP: function(e) {
+		wx.navigateTo({
+			url: '../transfer/addPage/add-cp',
+		});
+	},
 
   /**
    * 生命周期函数--监听页面加载

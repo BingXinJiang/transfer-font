@@ -25,7 +25,7 @@
 		</wxc-flex>
 
 		<wxc-cc class='transfer-func'>
-			<wxc-button size='normal' type='selection'>传递</wxc-button>
+			<wxc-button size='normal' type='selection' bind:click='transfer'>传递</wxc-button>
 		</wxc-cc>
 
 </view>

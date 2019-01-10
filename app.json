@@ -1,43 +1,46 @@
 {
-  "pages": [
-    "pages/transfer/login/login",
-		"pages/transfer/transfer/createTransfer/create-transfer",    
-    "pages/transfer/loveTransfer/love-transfer",
-    "pages/transfer/transfer",
-    "pages/transfer/transfer/transfer",
-    "pages/transfer/loveLine/love-line",
-    "pages/transfer/mine/mine"
-  ],
-  "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
-  },
-  "tabBar": {
-    "color": "#7A7E83",
-    "selectedColor": "#3cc51f",
-    "borderStyle": "black",
-    "backgroundColor": "#ffffff",
-    "list": [
-      {
-        "pagePath": "pages/transfer/loveTransfer/love-transfer",
-        "iconPath": "pages/transfer/image/tab/love_transfer_l.png",
-        "selectedIconPath": "pages/transfer/image/tab/love_transfer_h.png",
-        "text": "爱传递"
-      },
-      {
-        "pagePath": "pages/transfer/loveLine/love-line",
-        "iconPath": "pages/transfer/image/tab/love_line_l.png",
-        "selectedIconPath": "pages/transfer/image/tab/love_line_h.png",
-        "text": "LoveLine"
-      },
-      {
-        "pagePath": "pages/transfer/mine/mine",
-        "iconPath": "pages/transfer/image/tab/mine_l.png",
-        "selectedIconPath": "pages/transfer/image/tab/mine_h.png",
-        "text": "我的"
-      }
-    ]
-  }
+	"pages": [
+		
+		"pages/transfer/login/login",
+		"pages/transfer/transfer/createTransfer/create-transfer",
+		"pages/transfer/loveTransfer/love-transfer",
+		"pages/transfer/transfer",
+		"pages/transfer/transfer/transfer",
+		"pages/transfer/loveLine/love-line",
+		"pages/transfer/mine/mine",
+		"pages/transfer/transfer/addPage/add-cp",
+		"pages/transfer/transfer/createTodo/create-todo"
+	],
+	"window": {
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#fff",
+		"navigationBarTitleText": "WeChat",
+		"navigationBarTextStyle": "black"
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#3cc51f",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"pagePath": "pages/transfer/loveTransfer/love-transfer",
+				"iconPath": "pages/transfer/image/tab/love_transfer_l.png",
+				"selectedIconPath": "pages/transfer/image/tab/love_transfer_h.png",
+				"text": "爱传递"
+			},
+			{
+				"pagePath": "pages/transfer/loveLine/love-line",
+				"iconPath": "pages/transfer/image/tab/love_line_l.png",
+				"selectedIconPath": "pages/transfer/image/tab/love_line_h.png",
+				"text": "LoveLine"
+			},
+			{
+				"pagePath": "pages/transfer/mine/mine",
+				"iconPath": "pages/transfer/image/tab/mine_l.png",
+				"selectedIconPath": "pages/transfer/image/tab/mine_h.png",
+				"text": "我的"
+			}
+		]
+	}
 }

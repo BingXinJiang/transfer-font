@@ -21,7 +21,7 @@ Component({
   methods: {
     createTransfer: function() {
       wx.navigateTo({
-        url: '../transfer/createTransfer/create-transfer',
+        url: '../transfer/createTodo/create-todo',
       })
     }
   }

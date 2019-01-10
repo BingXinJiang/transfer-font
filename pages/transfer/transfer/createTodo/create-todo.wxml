@@ -1,0 +1,14 @@
+<!--pages/transfer/transfer/createTodo/create-todo.wxml-->
+<view class='container'>
+
+	<wux-cell-group title="任务详情">
+    <wux-cell hover-class="none">
+      <wux-textarea class='description' placeholder="请输入详情描述" maxlength='140' hasCount='true' clear='true' bind:change='getDescription'/>
+    </wux-cell>
+  </wux-cell-group>
+
+	<wxc-cc class='add-todo'>
+			<wxc-button size='normal' type='selection' bind:click='addTodo'>传递		</wxc-button>
+	</wxc-cc>
+
+</view>

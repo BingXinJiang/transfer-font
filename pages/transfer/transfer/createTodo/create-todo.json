@@ -1,0 +1,11 @@
+{
+		"usingComponents": {
+			"wux-cell-group": "../../../../dist/packages/@wux/cell-group/index",
+			"wux-cell": "../../../../dist/packages/@wux/cell/index",
+			"wux-textarea": "../../../../dist/packages/@wux/textarea/index",
+			"wux-input": "../../../../dist/packages/@wux/input/index",
+			"wxc-button": "../../../../dist/packages/@minui/wxc-button/dist/index",
+			"wxc-cc": "../../../../dist/packages/@minui/wxc-cc/dist/index"
+		},
+		"navigationBarTitleText": "添加"
+}

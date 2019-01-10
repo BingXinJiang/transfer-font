@@ -28,7 +28,7 @@ Page({
 	createContent: function(e) {
 		const content = e.detail.value;
 		this.setData({
-			content: content,
+			description: content,
 		});
 	},
 
@@ -36,7 +36,7 @@ Page({
 	 * 添加照片、视频、语音 功能键
 	 */
 	loadMedia: function() {
-		let AV = getApp().AV;
+		const AV = getApp().AV;
 		wx.showActionSheet({
 			itemList: ['图片', '小视频', '录音'],
 			success: function(res) {
@@ -54,10 +54,14 @@ Page({
 										uri: img.path,
 									},
 								}).save().then(function(file){
-									const imgs = this.data.images.push(file.id);
-									this.setData({
-										images: imgs,
-									});
+										console.log('file: ', file);
+										let pImgs = this.data.images;
+										pImgs.push(file.id);
+										console.log('--------------------')
+										console.log('imgs: ', pImgs);
+										this.setData({
+											images: imgs,
+										});
 									}, function (error) {
 										console.log('照片上传失败！');
 										console.log('error: ', error);
@@ -137,5 +141,48 @@ Page({
 				console.log(res.errMsg);
 			}
 		})
-	}
+	},
+
+	/**
+	 * 传递
+	 */
+	transfer: function() {
+		const AV = getApp().AV;
+		const { title, description, images, voice, video } = this.data;
+		// console.log('images: ', images);
+		// console.log('voice: ', voice);
+		// console.log('video: ', video);
+		const tImages = images.length > 0 ? images.map((imgId) => {
+			const tImg = AV.Object.createWithoutData('File', imgId);
+			return tImg;
+		}) : [];
+		const tVoice = voice ? AV.Object.createWithoutData('File', voice) : '';
+		const tVideo = video ? AV.Object.createWithoutData('File', video) : '';
+
+		const Transfer = AV.Object.extend('Transfer');
+		const transfer = new Transfer();
+		transfer.set('title', title);
+		transfer.set('description', description);
+		transfer.set('images', tImages);
+		transfer.set('voice', tVoice);
+		transfer.set('video', tVideo);
+		transfer.save().then((transfer) => {
+			console.log('传递发布成功！');
+			console.log('transfer: ', transfer);
+		}, (error) => {
+			console.log('传递发布失败！');
+			console.log('error: ', error);
+		});
+	},
 })
+
+
+
+
+
+
+
+
+
+
+

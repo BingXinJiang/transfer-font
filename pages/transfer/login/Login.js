@@ -20,9 +20,10 @@ Page({
     user.setEmail(userInfo.email);
 
     user.signUp().then(function (loginedUser) {
-      wx.switchTab({
-        url: '/pages/transfer/loveTransfer/love-transfer',
-      })
+      wx.redirectTo({
+        // url: '/pages/transfer/transfer/createTransfer/create-transfer',
+				url: '/pages/transfer/transfer/addPage/add-cp',
+      });
     }, (function (error) {
       console.log('error: ', error);
     }));
@@ -37,9 +38,16 @@ Page({
 
     AV.User.logIn(userInfo.email, userInfo.password).then((loginedUser) => {
       console.log('loginedUser: ', loginedUser);
-      wx.redirectTo({
-        url: '/pages/transfer/transfer/createTransfer/create-transfer',
-      })
+      // wx.redirectTo({
+        // url: '/pages/transfer/transfer/createTransfer/create-transfer',
+				// url: '/pages/transfer/transfer/addPage/add-cp',
+      // });
+			// wx.navigateTo({
+			// 	url: '/pages/transfer/transfer/createTodo/create-todo',
+			// })
+			wx.switchTab({
+				url: '/pages/transfer/loveTransfer/love-transfer',
+			})
     }, (error) => {
       console.log('error: ', error);
     });

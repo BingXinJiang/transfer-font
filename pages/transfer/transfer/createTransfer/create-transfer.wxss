@@ -71,3 +71,7 @@
 	border-bottom-color: #ECECEC;
 	padding-bottom: 30rpx;
 }
+
+.transfer-func {
+	background-color: red;
+}

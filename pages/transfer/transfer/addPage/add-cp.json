@@ -1,0 +1,10 @@
+{
+	"usingComponents": {
+		"wxc-select": "../../../../dist/packages/@minui/wxc-select/dist/index",
+		"van-checkbox": "../../../../dist/packages/@vant/checkbox/index",
+		"van-checkbox-group": "../../../../dist/packages/@vant/checkbox-group/index",
+		"van-cell": "../../../../dist/packages/@vant/cell/index",
+		"van-cell-group": "../../../../dist/packages/@vant/cell-group/index"
+	},
+	"navigationBarTitleText": "添加"
+}
